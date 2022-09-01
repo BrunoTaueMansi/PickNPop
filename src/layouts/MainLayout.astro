@@ -1,0 +1,79 @@
+<head>
+	<link rel="stylesheet" href="src/styles/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <div class="header">
+    <a href="/"
+      ><img
+        class="logo-titulo"
+        src="../assets/images/LogoPickNPop.png"
+        alt=""
+      />
+      <h1 class="titulo">Pick 'n Pop</h1>
+    </a>
+    <ul class="header-list">
+      <li><a href="/about">About</a></li>
+      <li><a href="">Channel</a></li>
+      <li><a href="#">Others</a></li>
+    </ul>
+  </div>
+</header>
+
+<slot />
+
+<footer>
+  <div class="footer">
+    <div>
+      <p>Bruno Taue Mansi - 2022</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .header {
+    padding: 5px;
+    display: flex;
+    border-bottom: 3px solid var(--clr-primary-600);
+  }
+  .header > a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .titulo {
+    font-size: var(--fnt-800);
+    font-weight: 700;
+    color: var(--clr-primary-400);
+    margin-left: 10px;
+  }
+
+  .logo-titulo {
+    height: 50px;
+    margin-left: 1vw;
+  }
+
+  .header-list {
+    margin-inline: 5vw;
+    display: flex;
+    align-self: center;
+  }
+
+  .header-list > li {
+    margin-inline: 2vw;
+    list-style: none;
+  }
+
+  .footer > * {
+    border-top: 3px solid var(--clr-primary-500);
+    font-weight: 600;
+    color: var(--clr-light);
+    background-color: var(--clr-primary-400) !important;
+    height: 50px;
+    padding: 30px;
+    text-align: center;
+  }
+</style>
